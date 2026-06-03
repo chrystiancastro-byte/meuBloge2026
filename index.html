@@ -1,152 +1,97 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!-- Define que este documento é do tipo HTML5 -->
+<html lang="pt-br"> <!-- Declara o início do documento HTML e define o idioma principal como Português do Brasil -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-            margin: 0;
-            padding: 0;
-        }
-
+<head> <!-- Contém metadados, configurações da página e links externos que não aparecem diretamente na tela -->
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 (permite acentos e caracteres especiais) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Garante a responsividade, ajustando o layout ao tamanho da tela do dispositivo -->
+    <title>Blog</title> <!-- Define o título que aparece na aba do navegador -->
+   
+    <style> /* Início do bloco de estilização CSS interno */
+       
+        /* Estiliza o cabeçalho da página */
         header {
-            background-color: #183C63;
-            color: #FFFFFF;
-            text-align: center;
-            max-width: 800px;
-            margin: 20px auto 0;
-            padding: 16px;
-            border-radius: 8px 8px 0 0;
+            background-color: #183C63; /* Define a cor de fundo azul */
+            color: #FFFFFF;            /* Define a cor do texto como branco */
+            text-align: center;        /* Alinha o texto no centro */
+            max-width: 800px;          /* Define a largura máxima de 800 pixels */
+            margin: 0 auto;            /* Centraliza o cabeçalho horizontalmente na tela */
+            padding: 16px;             /* Adiciona espaçamento interno de 16 pixels */
         }
 
+
+        /* Estiliza a área de conteúdo principal */
         main {
-            background-color: #FFFFFF;
-            color: #183C63;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-            border-radius: 0 0 8px 8px;
+            background-color: #FFFFFF; /* Define a cor de fundo branca */
+            color: #183C63;            /* Define a cor do texto como azul */
+            max-width: 800px;          /* Define a largura máxima de 800 pixels */
+            margin: 0 auto;            /* Centraliza o conteúdo principal horizontalmente */
+            padding: 16px;             /* Adiciona espaçamento interno de 16 pixels */
         }
-
+       
+        /* Estiliza cada bloco de post do blog */
         article {
-            display: flex;
-            gap: 16px;
-            margin-bottom: 24px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 16px;
+            display: flex;             /* Define o layout flexbox para alinhar os itens (imagem e texto) lado a lado */
         }
 
+
+        /* Estiliza as imagens dos artigos */
         img {
-            width: 80px;
-            height: 80px;
-            border-radius: 8px;
+            width: 80px;               /* Define a largura fixa de 80 pixels */
+            height: 80px;              /* Define a altura fixa de 80 pixels */
         }
 
+
+        /* Classe para estilizar o nome do autor do artigo */
         .artigo-autor {
-            font-weight: bold;
+            font-weight: bold;         /* Deixa o texto em negrito */
         }
-
-        button {
-            margin-right: 8px;
-            padding: 6px 12px;
-            cursor: pointer;
-            border: none;
-            border-radius: 6px;
-            background-color: #183C63;
-            color: white;
-        }
-
-        button:hover {
-            background-color: #24558d;
-        }
-    </style>
+    </style> /* Fim do bloco de estilização CSS */
 </head>
 
-<body>
 
-    <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
+<body> <!-- Início do corpo do documento, onde fica todo o conteúdo visível para o usuário -->
+   
+    <header> <!-- Seção do topo da página (cabeçalho) -->
+        <h1>Meu blog tech</h1> <!-- Título principal do blog -->
+        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p> <!-- Descrição do cabeçalho -->
     </header>
-
-    <main>
-
-        <article>
+   
+    <main> <!-- Área onde ficam os posts principais do blog -->
+       
+        <article> <!-- Primeiro artigo do blog -->
+            <!-- Tag de imagem com origem (src) e texto descritivo de acessibilidade (alt) -->
             <img src="imagem-blog.png"
-                alt="Imagem de tecnologia">
-
-            <div>
-                <h2>Meu primeiro post</h2>
-
-                <p class="artigo-autor">
-                    Por: Marcelo Paludetto
-                </p>
-
-                <p>
-                    Boas-vindas ao meu novo blog!
-                    Aqui vou compartilhar dicas de programação
-                    e curiosidades da área de tecnologia.
-                </p>
-
-                <button>❤️ <span>0</span></button>
-                <button>👍 <span>0</span></button>
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
+            <div> <!-- Divisor ou container para agrupar os textos ao lado da imagem -->
+                <h2>Meu primeiro post</h2> <!-- Título do post -->
+                <p class="artigo-autor">Por: Marcelo Paludetto</p> <!-- Autor com a classe de estilo em negrito -->
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p> <!-- Conteúdo do post -->
+                <button>❤️ <span>0</span></button> <!-- Botão de curtir (coração) com contador interno -->
+                <button>👍 <span>0</span></button> <!-- Botão de joinha com contador interno -->
             </div>
         </article>
-
-        <article>
+       
+        <article> <!-- Segundo artigo do blog -->
             <img src="imagem-blog.png"
-                alt="Imagem de tecnologia">
-
+                alt="Logotipo conceitual de tecnologia e educação: um livro aberto de onde emerge um cérebro digital brilhante, cercado por ícones de Wi-Fi, circuitos e lâmpada de ideia. Cores em tons de azul e branco.">
             <div>
                 <h2>Meu segundo post</h2>
-
-                <p class="artigo-autor">
-                    Por: Marcelo Paludetto
-                </p>
-
-                <p>
-                    Em breve vou publicar conteúdos sobre HTML,
-                    CSS e JavaScript.
-                </p>
-
+                <p class="artigo-autor">Por: Marcelo Paludetto</p>
+                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
                 <button>❤️ <span>0</span></button>
                 <button>👍 <span>0</span></button>
             </div>
         </article>
-
+       
     </main>
-
-    <script>
-
-        const botoes = document.querySelectorAll("button");
-
-        botoes.forEach(function (botao) {
-
-            let curtiu = false;
-
-            botao.addEventListener("click", function () {
-
-                let texto = botao.querySelector("span");
-
-                if (curtiu === false) {
-                    texto.textContent++;
-                    curtiu = true;
-                } else {
-                    texto.textContent--;
-                    curtiu = false;
-                }
-
-            });
-
-        });
-
-    </script>
-
 </body>
 
-</html>
+
+<script> /* Início do bloco de programação JavaScript */
+   
+    // Seleciona todos os elementos <button> da página e os armazena na constante "botoes"
+    const botoes = document.querySelectorAll("button");
+
+
+    // Percorre cada botão encontrado na página
